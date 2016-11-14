@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Outlets:
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var homeFeedImageView: UIImageView!
+    
+    //Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        scrollView.contentSize = CGSize(width: homeFeedImageView.frame.size.width, height: homeFeedImageView.frame.size.height + 1000)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    // Actions
+    
 
 
-}
-
+} // The end
