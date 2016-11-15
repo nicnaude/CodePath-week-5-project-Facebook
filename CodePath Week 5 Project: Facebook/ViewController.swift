@@ -9,21 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //Outlets:
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var homeFeedImageView: UIImageView!
+    
+    var fadeTransition: BaseTransition!
+    var lightBoxTransition: BaseTransition!
+    var selectedImageView: UIImageView!
     
     //Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: homeFeedImageView.frame.size.width, height: homeFeedImageView.frame.size.height + 1000)
-        
+        scrollView.contentSize = CGSize(width: homeFeedImageView.frame.size.width, height: homeFeedImageView.frame.size.height + 1000)   
+    }
+    
+    // Actions
+    @IBAction func onWeddingPhotoTapped(_ sender: UITapGestureRecognizer) {
+     
+        selectedImageView = sender.view as! UIImageView
+        performSegue(withIdentifier: "photoSegue", sender: nil)
     }
 
-    // Actions
     
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination as! PhotoViewController
+        fadeTransition = FadeTransition()
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.custom
+        destinationViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 1.5
+        
+    }
+    
+    
+    
+    
 } // The end

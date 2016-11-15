@@ -14,6 +14,11 @@
 		4A1805D81DD8426C00F4F8E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1805D61DD8426C00F4F8E8 /* LaunchScreen.storyboard */; };
 		4A1805E31DD8426C00F4F8E8 /* CodePath_Week_5_Project__FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1805E21DD8426C00F4F8E8 /* CodePath_Week_5_Project__FacebookTests.swift */; };
 		4A1805EE1DD8426C00F4F8E8 /* CodePath_Week_5_Project__FacebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1805ED1DD8426C00F4F8E8 /* CodePath_Week_5_Project__FacebookUITests.swift */; };
+		4A4249FD1DDA831300738C57 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4249FC1DDA831300738C57 /* ImageTransition.swift */; };
+		4ACECF131DD98704007CDE4C /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACECF121DD98704007CDE4C /* BaseTransition.swift */; };
+		4ACECF151DD98731007CDE4C /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACECF141DD98731007CDE4C /* FadeTransition.swift */; };
+		4ACECF171DD9875D007CDE4C /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACECF161DD9875D007CDE4C /* LightBoxTransition.swift */; };
+		4ACECF191DD98B9A007CDE4C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACECF181DD98B9A007CDE4C /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		4A1805E91DD8426C00F4F8E8 /* CodePath Week 5 Project: FacebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodePath Week 5 Project: FacebookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1805ED1DD8426C00F4F8E8 /* CodePath_Week_5_Project__FacebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePath_Week_5_Project__FacebookUITests.swift; sourceTree = "<group>"; };
 		4A1805EF1DD8426C00F4F8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4249FC1DDA831300738C57 /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		4ACECF121DD98704007CDE4C /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		4ACECF141DD98731007CDE4C /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		4ACECF161DD9875D007CDE4C /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
+		4ACECF181DD98B9A007CDE4C /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,9 @@
 			children = (
 				4A1805CD1DD8426C00F4F8E8 /* AppDelegate.swift */,
 				4A1805CF1DD8426C00F4F8E8 /* ViewController.swift */,
+				4ACECF181DD98B9A007CDE4C /* PhotoViewController.swift */,
 				4A1805D11DD8426C00F4F8E8 /* Main.storyboard */,
+				4ACECF111DD986C8007CDE4C /* Animation files */,
 				4A1805D41DD8426C00F4F8E8 /* Assets.xcassets */,
 				4A1805D61DD8426C00F4F8E8 /* LaunchScreen.storyboard */,
 				4A1805D91DD8426C00F4F8E8 /* Info.plist */,
@@ -123,6 +135,17 @@
 				4A1805EF1DD8426C00F4F8E8 /* Info.plist */,
 			);
 			path = "CodePath Week 5 Project: FacebookUITests";
+			sourceTree = "<group>";
+		};
+		4ACECF111DD986C8007CDE4C /* Animation files */ = {
+			isa = PBXGroup;
+			children = (
+				4A4249FC1DDA831300738C57 /* ImageTransition.swift */,
+				4ACECF121DD98704007CDE4C /* BaseTransition.swift */,
+				4ACECF161DD9875D007CDE4C /* LightBoxTransition.swift */,
+				4ACECF141DD98731007CDE4C /* FadeTransition.swift */,
+			);
+			name = "Animation files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1805D01DD8426C00F4F8E8 /* ViewController.swift in Sources */,
+				4A4249FD1DDA831300738C57 /* ImageTransition.swift in Sources */,
+				4ACECF131DD98704007CDE4C /* BaseTransition.swift in Sources */,
+				4ACECF151DD98731007CDE4C /* FadeTransition.swift in Sources */,
 				4A1805CE1DD8426C00F4F8E8 /* AppDelegate.swift in Sources */,
+				4ACECF171DD9875D007CDE4C /* LightBoxTransition.swift in Sources */,
+				4ACECF191DD98B9A007CDE4C /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +540,7 @@
 				4A1805F41DD8426C00F4F8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A1805F51DD8426C00F4F8E8 /* Build configuration list for PBXNativeTarget "CodePath Week 5 Project: FacebookTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +549,7 @@
 				4A1805F71DD8426C00F4F8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A1805F81DD8426C00F4F8E8 /* Build configuration list for PBXNativeTarget "CodePath Week 5 Project: FacebookUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +558,7 @@
 				4A1805FA1DD8426C00F4F8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
